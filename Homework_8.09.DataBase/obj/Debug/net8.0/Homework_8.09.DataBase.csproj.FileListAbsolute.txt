@@ -1,0 +1,11 @@
+C:\Users\house\Documents\GitHub\Homework_8.09\Homework_8.09.DataBase\bin\Debug\net8.0\Homework_8.09.DataBase.deps.json
+C:\Users\house\Documents\GitHub\Homework_8.09\Homework_8.09.DataBase\bin\Debug\net8.0\Homework_8.09.DataBase.dll
+C:\Users\house\Documents\GitHub\Homework_8.09\Homework_8.09.DataBase\bin\Debug\net8.0\Homework_8.09.DataBase.pdb
+C:\Users\house\Documents\GitHub\Homework_8.09\Homework_8.09.DataBase\obj\Debug\net8.0\Homework_8.09.DataBase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\house\Documents\GitHub\Homework_8.09\Homework_8.09.DataBase\obj\Debug\net8.0\Homework_8.09.DataBase.AssemblyInfoInputs.cache
+C:\Users\house\Documents\GitHub\Homework_8.09\Homework_8.09.DataBase\obj\Debug\net8.0\Homework_8.09.DataBase.AssemblyInfo.cs
+C:\Users\house\Documents\GitHub\Homework_8.09\Homework_8.09.DataBase\obj\Debug\net8.0\Homework_8.09.DataBase.csproj.CoreCompileInputs.cache
+C:\Users\house\Documents\GitHub\Homework_8.09\Homework_8.09.DataBase\obj\Debug\net8.0\Homework_8.09.DataBase.dll
+C:\Users\house\Documents\GitHub\Homework_8.09\Homework_8.09.DataBase\obj\Debug\net8.0\refint\Homework_8.09.DataBase.dll
+C:\Users\house\Documents\GitHub\Homework_8.09\Homework_8.09.DataBase\obj\Debug\net8.0\Homework_8.09.DataBase.pdb
+C:\Users\house\Documents\GitHub\Homework_8.09\Homework_8.09.DataBase\obj\Debug\net8.0\ref\Homework_8.09.DataBase.dll

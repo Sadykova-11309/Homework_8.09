@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Homework_8.09.Service/1.0.0": {
+        "dependencies": {
+          "Homework_8.09.DataBase": "1.0.0"
+        },
+        "runtime": {
+          "Homework_8.09.Service.dll": {}
+        }
+      },
+      "Homework_8.09.DataBase/1.0.0": {
+        "runtime": {
+          "Homework_8.09.DataBase.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Homework_8.09.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Homework_8.09.DataBase/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
