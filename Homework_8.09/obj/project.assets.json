@@ -99,11 +99,22 @@
           "bin/placeholder/Homework_8.09.DataBase.dll": {}
         }
       },
+      "Homework_8.09.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Homework_8.09.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Homework_8.09.Models.dll": {}
+        }
+      },
       "Homework_8.09.Service/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "Homework_8.09.DataBase": "1.0.0"
+          "Homework_8.09.DataBase": "1.0.0",
+          "Homework_8.09.Models": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Homework_8.09.Service.dll": {}
@@ -468,6 +479,11 @@
       "path": "../Homework_8.09.DataBase/Homework_8.09.DataBase.csproj",
       "msbuildProject": "../Homework_8.09.DataBase/Homework_8.09.DataBase.csproj"
     },
+    "Homework_8.09.Models/1.0.0": {
+      "type": "project",
+      "path": "../Homework_8.09.Models/Homework_8.09.Models.csproj",
+      "msbuildProject": "../Homework_8.09.Models/Homework_8.09.Models.csproj"
+    },
     "Homework_8.09.Service/1.0.0": {
       "type": "project",
       "path": "../Homework_8.09.Service/Homework_8.09.Service.csproj",
@@ -477,6 +493,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Homework_8.09.DataBase >= 1.0.0",
+      "Homework_8.09.Models >= 1.0.0",
       "Homework_8.09.Service >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
@@ -515,6 +532,9 @@
           "projectReferences": {
             "C:\\Users\\house\\Documents\\GitHub\\Homework_8.09\\Homework_8.09.DataBase\\Homework_8.09.DataBase.csproj": {
               "projectPath": "C:\\Users\\house\\Documents\\GitHub\\Homework_8.09\\Homework_8.09.DataBase\\Homework_8.09.DataBase.csproj"
+            },
+            "C:\\Users\\house\\Documents\\GitHub\\Homework_8.09\\Homework_8.09.Models\\Homework_8.09.Models.csproj": {
+              "projectPath": "C:\\Users\\house\\Documents\\GitHub\\Homework_8.09\\Homework_8.09.Models\\Homework_8.09.Models.csproj"
             },
             "C:\\Users\\house\\Documents\\GitHub\\Homework_8.09\\Homework_8.09.Service\\Homework_8.09.Service.csproj": {
               "projectPath": "C:\\Users\\house\\Documents\\GitHub\\Homework_8.09\\Homework_8.09.Service\\Homework_8.09.Service.csproj"

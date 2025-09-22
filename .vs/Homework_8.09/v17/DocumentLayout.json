@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\house\\Documents\\GitHub\\Homework_8.09\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4C8C4DA8-BE6A-4A08-A31F-F77102C137B0}|Homework_8.09.Service\\Homework_8.09.Service.csproj|c:\\users\\house\\documents\\github\\homework_8.09\\homework_8.09.service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C8C4DA8-BE6A-4A08-A31F-F77102C137B0}|Homework_8.09.Service\\Homework_8.09.Service.csproj|solutionrelative:homework_8.09.service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4C8C4DA8-BE6A-4A08-A31F-F77102C137B0}|Homework_8.09.Service\\Homework_8.09.Service.csproj|c:\\users\\house\\documents\\github\\homework_8.09\\homework_8.09.service\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C8C4DA8-BE6A-4A08-A31F-F77102C137B0}|Homework_8.09.Service\\Homework_8.09.Service.csproj|solutionrelative:homework_8.09.service\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BA2DBF4-10F5-4AE0-AFAC-B09F44157233}|Homework_8.09\\Homework_8.09.csproj|c:\\users\\house\\documents\\github\\homework_8.09\\homework_8.09\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BA2DBF4-10F5-4AE0-AFAC-B09F44157233}|Homework_8.09\\Homework_8.09.csproj|solutionrelative:homework_8.09\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{422C13C8-3099-4042-B9D4-94F5F65FE147}|Homework_8.09.DataBase\\Homework_8.09.DataBase.csproj|c:\\users\\house\\documents\\github\\homework_8.09\\homework_8.09.database\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{422C13C8-3099-4042-B9D4-94F5F65FE147}|Homework_8.09.DataBase\\Homework_8.09.DataBase.csproj|solutionrelative:homework_8.09.database\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9BA2DBF4-10F5-4AE0-AFAC-B09F44157233}|Homework_8.09\\Homework_8.09.csproj|c:\\users\\house\\documents\\github\\homework_8.09\\homework_8.09\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9BA2DBF4-10F5-4AE0-AFAC-B09F44157233}|Homework_8.09\\Homework_8.09.csproj|solutionrelative:homework_8.09\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C8C4DA8-BE6A-4A08-A31F-F77102C137B0}|Homework_8.09.Service\\Homework_8.09.Service.csproj|c:\\users\\house\\documents\\github\\homework_8.09\\homework_8.09.service\\homework_8.09.service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{4C8C4DA8-BE6A-4A08-A31F-F77102C137B0}|Homework_8.09.Service\\Homework_8.09.Service.csproj|solutionrelative:homework_8.09.service\\homework_8.09.service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{76923243-5B7B-415E-921C-D9604E4624CE}|Homework_8.09.Models\\Homework_8.09.Models.csproj|c:\\users\\house\\documents\\github\\homework_8.09\\homework_8.09.models\\dto\\updaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76923243-5B7B-415E-921C-D9604E4624CE}|Homework_8.09.Models\\Homework_8.09.Models.csproj|solutionrelative:homework_8.09.models\\dto\\updaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{422C13C8-3099-4042-B9D4-94F5F65FE147}|Homework_8.09.DataBase\\Homework_8.09.DataBase.csproj|c:\\users\\house\\documents\\github\\homework_8.09\\homework_8.09.database\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{422C13C8-3099-4042-B9D4-94F5F65FE147}|Homework_8.09.DataBase\\Homework_8.09.DataBase.csproj|solutionrelative:homework_8.09.database\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76923243-5B7B-415E-921C-D9604E4624CE}|Homework_8.09.Models\\Homework_8.09.Models.csproj|c:\\users\\house\\documents\\github\\homework_8.09\\homework_8.09.models\\dto\\createrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76923243-5B7B-415E-921C-D9604E4624CE}|Homework_8.09.Models\\Homework_8.09.Models.csproj|solutionrelative:homework_8.09.models\\dto\\createrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{422C13C8-3099-4042-B9D4-94F5F65FE147}|Homework_8.09.DataBase\\Homework_8.09.DataBase.csproj|c:\\users\\house\\documents\\github\\homework_8.09\\homework_8.09.database\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{422C13C8-3099-4042-B9D4-94F5F65FE147}|Homework_8.09.DataBase\\Homework_8.09.DataBase.csproj|solutionrelative:homework_8.09.database\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76923243-5B7B-415E-921C-D9604E4624CE}|Homework_8.09.Models\\Homework_8.09.Models.csproj|c:\\users\\house\\documents\\github\\homework_8.09\\homework_8.09.models\\dto\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76923243-5B7B-415E-921C-D9604E4624CE}|Homework_8.09.Models\\Homework_8.09.Models.csproj|solutionrelative:homework_8.09.models\\dto\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,21 +34,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Homework_8.09.Service",
-              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\Homework_8.09\\Homework_8.09.Service\\Homework_8.09.Service.csproj",
-              "RelativeDocumentMoniker": "Homework_8.09.Service\\Homework_8.09.Service.csproj",
-              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\Homework_8.09\\Homework_8.09.Service\\Homework_8.09.Service.csproj",
-              "RelativeToolTip": "Homework_8.09.Service\\Homework_8.09.Service.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-14T19:39:07.668Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
@@ -67,54 +54,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "LoginRequest.cs",
-              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\Homework_8.09\\Homework_8.09.DataBase\\LoginRequest.cs",
-              "RelativeDocumentMoniker": "Homework_8.09.DataBase\\LoginRequest.cs",
-              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\Homework_8.09\\Homework_8.09.DataBase\\LoginRequest.cs",
-              "RelativeToolTip": "Homework_8.09.DataBase\\LoginRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\Homework_8.09\\Homework_8.09.Models\\DTO\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "Homework_8.09.Models\\DTO\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\Homework_8.09\\Homework_8.09.Models\\DTO\\LoginRequest.cs",
+              "RelativeToolTip": "Homework_8.09.Models\\DTO\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T19:36:17.538Z",
+              "WhenOpened": "2025-09-15T15:13:12.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UpdateRequest.cs",
+              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\Homework_8.09\\Homework_8.09.Models\\DTO\\UpdateRequest.cs",
+              "RelativeDocumentMoniker": "Homework_8.09.Models\\DTO\\UpdateRequest.cs",
+              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\Homework_8.09\\Homework_8.09.Models\\DTO\\UpdateRequest.cs",
+              "RelativeToolTip": "Homework_8.09.Models\\DTO\\UpdateRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T15:13:09.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreateRequest.cs",
+              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\Homework_8.09\\Homework_8.09.Models\\DTO\\CreateRequest.cs",
+              "RelativeDocumentMoniker": "Homework_8.09.Models\\DTO\\CreateRequest.cs",
+              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\Homework_8.09\\Homework_8.09.Models\\DTO\\CreateRequest.cs",
+              "RelativeToolTip": "Homework_8.09.Models\\DTO\\CreateRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T15:12:48.975Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\Homework_8.09\\Homework_8.09.Service\\UserService.cs",
-              "RelativeDocumentMoniker": "Homework_8.09.Service\\UserService.cs",
-              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\Homework_8.09\\Homework_8.09.Service\\UserService.cs",
-              "RelativeToolTip": "Homework_8.09.Service\\UserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\Homework_8.09\\Homework_8.09.Service\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Homework_8.09.Service\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\Homework_8.09\\Homework_8.09.Service\\Services\\UserService.cs",
+              "RelativeToolTip": "Homework_8.09.Service\\Services\\UserService.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAgwEMAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-14T19:28:07.077Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\Homework_8.09\\Homework_8.09.DataBase\\User.cs",
-              "RelativeDocumentMoniker": "Homework_8.09.DataBase\\User.cs",
-              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\Homework_8.09\\Homework_8.09.DataBase\\User.cs",
-              "RelativeToolTip": "Homework_8.09.DataBase\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\Homework_8.09\\Homework_8.09.DataBase\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Homework_8.09.DataBase\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\Homework_8.09\\Homework_8.09.DataBase\\Models\\User.cs",
+              "RelativeToolTip": "Homework_8.09.DataBase\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-14T19:23:05.652Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\Homework_8.09\\Homework_8.09\\Program.cs",
-              "RelativeDocumentMoniker": "Homework_8.09\\Program.cs",
-              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\Homework_8.09\\Homework_8.09\\Program.cs",
-              "RelativeToolTip": "Homework_8.09\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T19:01:32.916Z",
               "EditorCaption": ""
             },
             {
@@ -125,7 +125,7 @@
               "RelativeDocumentMoniker": "Homework_8.09\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\Homework_8.09\\Homework_8.09\\Controllers\\UserController.cs",
               "RelativeToolTip": "Homework_8.09\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAowEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-14T19:00:38.451Z",
               "EditorCaption": ""

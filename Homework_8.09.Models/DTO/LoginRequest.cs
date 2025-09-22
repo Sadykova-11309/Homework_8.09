@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Homework_8._09.DataBase
+namespace Homework_8._09.DataBase.Scheme
 {
 	public class LoginRequest
 	{

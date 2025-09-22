@@ -1,8 +1,39 @@
 [
   {
     "ContainingType": "Homework_8._09.Controllers.UserController",
+    "Method": "GetAll",
+    "RelativePath": "api/User/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Homework_8._09.Controllers.UserController",
+    "Method": "GetAllPeriod",
+    "RelativePath": "api/User/by period",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "beginingTime",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "endingTime",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Homework_8._09.Controllers.UserController",
     "Method": "Delete",
-    "RelativePath": "api/User/{id}",
+    "RelativePath": "api/User/delete/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -25,7 +56,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "Homework_8._09.DataBase.LoginRequest",
+        "Type": "Homework_8._09.DataBase.Scheme.LoginRequest",
         "IsRequired": true
       }
     ],
@@ -40,8 +71,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "user",
-        "Type": "Homework_8._09.DataBase.User",
+        "Name": "request",
+        "Type": "Homework_8._09.Models.DTO.CreateRequest",
         "IsRequired": true
       }
     ],
@@ -56,8 +87,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "user",
-        "Type": "Homework_8._09.DataBase.User",
+        "Name": "request",
+        "Type": "Homework_8._09.Models.DTO.UpdateRequest",
         "IsRequired": true
       }
     ],

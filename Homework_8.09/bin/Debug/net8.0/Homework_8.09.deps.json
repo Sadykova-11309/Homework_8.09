@@ -9,6 +9,7 @@
       "Homework_8.09/1.0.0": {
         "dependencies": {
           "Homework_8.09.DataBase": "1.0.0",
+          "Homework_8.09.Models": "1.0.0",
           "Homework_8.09.Service": "1.0.0",
           "Swashbuckle.AspNetCore": "6.6.2"
         },
@@ -71,9 +72,18 @@
           }
         }
       },
+      "Homework_8.09.Models/1.0.0": {
+        "runtime": {
+          "Homework_8.09.Models.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Homework_8.09.Service/1.0.0": {
         "dependencies": {
-          "Homework_8.09.DataBase": "1.0.0"
+          "Homework_8.09.DataBase": "1.0.0",
+          "Homework_8.09.Models": "1.0.0"
         },
         "runtime": {
           "Homework_8.09.Service.dll": {
@@ -133,6 +143,11 @@
       "hashPath": "swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512"
     },
     "Homework_8.09.DataBase/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Homework_8.09.Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

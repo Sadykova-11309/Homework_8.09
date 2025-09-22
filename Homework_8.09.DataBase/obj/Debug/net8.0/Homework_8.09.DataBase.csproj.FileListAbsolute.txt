@@ -9,3 +9,4 @@ C:\Users\house\Documents\GitHub\Homework_8.09\Homework_8.09.DataBase\obj\Debug\n
 C:\Users\house\Documents\GitHub\Homework_8.09\Homework_8.09.DataBase\obj\Debug\net8.0\refint\Homework_8.09.DataBase.dll
 C:\Users\house\Documents\GitHub\Homework_8.09\Homework_8.09.DataBase\obj\Debug\net8.0\Homework_8.09.DataBase.pdb
 C:\Users\house\Documents\GitHub\Homework_8.09\Homework_8.09.DataBase\obj\Debug\net8.0\ref\Homework_8.09.DataBase.dll
+C:\Users\house\Documents\GitHub\Homework_8.09\Homework_8.09.DataBase\obj\Debug\net8.0\Homework_8.09.DataBase.sourcelink.json

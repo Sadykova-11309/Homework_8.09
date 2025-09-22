@@ -1,11 +1,11 @@
-﻿using Homework_8._09.DataBase;
+﻿using Homework_8._09.DataBase.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Homework_8._09.Service
+namespace Homework_8._09.Service.Services
 {
 	public class UserService
 	{
@@ -17,6 +17,7 @@ namespace Homework_8._09.Service
 		{
 			user.Id = nextid;
 			nextid++;
+			user.CreatedAt = DateTime.Now;
 			users.Add(user);
 			return user;
 
@@ -29,6 +30,7 @@ namespace Homework_8._09.Service
 			{
 				user.login = updatedUser.login;
 				user.password = updatedUser.password;
+				user.UpdatedAt = DateTime.Now;
 			}
 			return user;
 		}
@@ -47,6 +49,21 @@ namespace Homework_8._09.Service
 		public User GetByCredentials (string login, string password)
 		{
 			return users.FirstOrDefault(u => u.login == login && u.password == password);
+		}
+
+		public List<User> GetAll ()
+		{
+			return users;
+		}
+
+		public List<User> GetByTimePeriodForCreated (DateTime beginingTime, DateTime endingTime)
+		{
+			return users.Where(u => u.CreatedAt >= beginingTime && u.CreatedAt <= endingTime).ToList();
+		}
+
+		public List<User> GetByTimePeriodForUpdated(DateTime beginingTime, DateTime endingTime)
+		{
+			return users.Where(u => u.UpdatedAt >= beginingTime && u.UpdatedAt <= endingTime).ToList();
 		}
 	}
 }

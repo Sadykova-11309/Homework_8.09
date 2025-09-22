@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Homework_8._09.DataBase
+namespace Homework_8._09.Models.DTO
 {
-	public class User
+	public class CreateRequest
 	{
-		public int Id { get; set; }
 		public string login { get; set; }
 		public string password { get; set; }
 	}

@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36127.28 d17.14
+VisualStudioVersion = 17.14.36127.28
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework_8.09", "Homework_8.09\Homework_8.09.csproj", "{9BA2DBF4-10F5-4AE0-AFAC-B09F44157233}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework_8.09.Service", "Homework_8.09.Service\Homework_8.09.Service.csproj", "{4C8C4DA8-BE6A-4A08-A31F-F77102C137B0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework_8.09.DataBase", "Homework_8.09.DataBase\Homework_8.09.DataBase.csproj", "{422C13C8-3099-4042-B9D4-94F5F65FE147}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework_8.09.Models", "Homework_8.09.Models\Homework_8.09.Models.csproj", "{76923243-5B7B-415E-921C-D9604E4624CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{422C13C8-3099-4042-B9D4-94F5F65FE147}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{422C13C8-3099-4042-B9D4-94F5F65FE147}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{422C13C8-3099-4042-B9D4-94F5F65FE147}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76923243-5B7B-415E-921C-D9604E4624CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76923243-5B7B-415E-921C-D9604E4624CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76923243-5B7B-415E-921C-D9604E4624CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76923243-5B7B-415E-921C-D9604E4624CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

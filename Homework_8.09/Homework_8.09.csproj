@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Homework_8.09.DataBase\Homework_8.09.DataBase.csproj" />
+    <ProjectReference Include="..\Homework_8.09.Models\Homework_8.09.Models.csproj" />
     <ProjectReference Include="..\Homework_8.09.Service\Homework_8.09.Service.csproj" />
   </ItemGroup>
 

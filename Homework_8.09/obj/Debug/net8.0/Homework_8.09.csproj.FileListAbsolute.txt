@@ -33,3 +33,6 @@ C:\Users\house\Documents\GitHub\Homework_8.09\Homework_8.09\obj\Debug\net8.0\ref
 C:\Users\house\Documents\GitHub\Homework_8.09\Homework_8.09\obj\Debug\net8.0\Homework_8.09.pdb
 C:\Users\house\Documents\GitHub\Homework_8.09\Homework_8.09\obj\Debug\net8.0\Homework_8.09.genruntimeconfig.cache
 C:\Users\house\Documents\GitHub\Homework_8.09\Homework_8.09\obj\Debug\net8.0\ref\Homework_8.09.dll
+C:\Users\house\Documents\GitHub\Homework_8.09\Homework_8.09\bin\Debug\net8.0\Homework_8.09.Models.dll
+C:\Users\house\Documents\GitHub\Homework_8.09\Homework_8.09\bin\Debug\net8.0\Homework_8.09.Models.pdb
+C:\Users\house\Documents\GitHub\Homework_8.09\Homework_8.09\obj\Debug\net8.0\Homework_8.09.sourcelink.json
