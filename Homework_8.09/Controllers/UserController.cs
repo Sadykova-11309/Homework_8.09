@@ -25,7 +25,8 @@ namespace Homework_8._09.Controllers
 			var user = new User
 			{
 				login = request.login,
-				password = request.password
+				password = request.password,
+				sex = request.sex
 			};
 			var newUser = _userService.Create(user); 
 			return Ok(newUser);
@@ -46,7 +47,8 @@ namespace Homework_8._09.Controllers
 			{
 				Id = request.Id,
 				login = request.login,
-				password = request.password
+				password = request.password,
+				sex = request.sex
 			};
 			var updatedUser = _userService.Update(user);
 			if (updatedUser == null) { return NotFound(new { Message = "Пользователь не найден!" }); }
@@ -82,6 +84,40 @@ namespace Homework_8._09.Controllers
 			if (beginingTime > endingTime) { return BadRequest("Начальное время не может быть больше конечного"); }
 			var users = _userService.GetByTimePeriodForUpdated(beginingTime, endingTime);
 			return Ok(users);
+		}
+
+		//Controller for LINQ methods
+
+		[HttpGet("users count")]
+		public IActionResult GetUsersCount()
+		{
+			var count = _userService.GetCount();
+			return Ok(count);
+		}
+
+		[HttpGet("sort users by sex")]
+		public IActionResult GetSortedUsers(string sex)
+		{
+			if (sex != "m" &&  sex != "f")
+			{
+				return BadRequest("Поле 'sex' должно иметь значение 'm' или 'f'");
+			}
+			var users = _userService.GetSortedBySex(sex);
+			return Ok(users);
+		}
+
+		[HttpGet("max registration date")]
+		public IActionResult GetMaxDate()
+		{
+			var date = _userService.GetMaxDateTime();
+			return Ok(date);
+		}
+
+		[HttpGet("min registration date")]
+		public IActionResult GetMinDate()
+		{
+			var date = _userService.GetMinDateTime();
+			return Ok(date);
 		}
 	}
 }

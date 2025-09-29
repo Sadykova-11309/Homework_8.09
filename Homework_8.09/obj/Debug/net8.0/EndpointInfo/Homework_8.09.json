@@ -133,7 +133,7 @@
         }
       }
     },
-    "/api/User/by period": {
+    "/api/User/created time filter": {
       "get": {
         "tags": [
           "User"
@@ -162,11 +162,101 @@
           }
         }
       }
+    },
+    "/api/User/updated time filter": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "beginingTime",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "endingTime",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/users count": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/sort users by sex": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "sex",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/max registration date": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/min registration date": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
       "CreateRequest": {
+        "required": [
+          "sex"
+        ],
         "type": "object",
         "properties": {
           "login": {
@@ -176,6 +266,11 @@
           "password": {
             "type": "string",
             "nullable": true
+          },
+          "sex": {
+            "minLength": 1,
+            "pattern": "^[mf]$",
+            "type": "string"
           }
         },
         "additionalProperties": false
@@ -195,6 +290,9 @@
         "additionalProperties": false
       },
       "UpdateRequest": {
+        "required": [
+          "sex"
+        ],
         "type": "object",
         "properties": {
           "id": {
@@ -208,6 +306,11 @@
           "password": {
             "type": "string",
             "nullable": true
+          },
+          "sex": {
+            "minLength": 1,
+            "pattern": "^[mf]$",
+            "type": "string"
           }
         },
         "additionalProperties": false

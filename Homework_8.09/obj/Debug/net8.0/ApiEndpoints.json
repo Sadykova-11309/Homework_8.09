@@ -11,8 +11,8 @@
   },
   {
     "ContainingType": "Homework_8._09.Controllers.UserController",
-    "Method": "GetAllPeriod",
-    "RelativePath": "api/User/by period",
+    "Method": "GetCreatedByPeriod",
+    "RelativePath": "api/User/created time filter",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -64,6 +64,26 @@
   },
   {
     "ContainingType": "Homework_8._09.Controllers.UserController",
+    "Method": "GetMaxDate",
+    "RelativePath": "api/User/max registration date",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Homework_8._09.Controllers.UserController",
+    "Method": "GetMinDate",
+    "RelativePath": "api/User/min registration date",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Homework_8._09.Controllers.UserController",
     "Method": "Register",
     "RelativePath": "api/User/register",
     "HttpMethod": "POST",
@@ -74,6 +94,22 @@
         "Name": "request",
         "Type": "Homework_8._09.Models.DTO.CreateRequest",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Homework_8._09.Controllers.UserController",
+    "Method": "GetSortedUsers",
+    "RelativePath": "api/User/sort users by sex",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sex",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -92,6 +128,37 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Homework_8._09.Controllers.UserController",
+    "Method": "GetUpdatedByPeriod",
+    "RelativePath": "api/User/updated time filter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "beginingTime",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "endingTime",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Homework_8._09.Controllers.UserController",
+    "Method": "GetUsersCount",
+    "RelativePath": "api/User/users count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]

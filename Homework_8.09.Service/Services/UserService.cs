@@ -30,6 +30,7 @@ namespace Homework_8._09.Service.Services
 			{
 				user.login = updatedUser.login;
 				user.password = updatedUser.password;
+				user.sex = updatedUser.sex;
 				user.UpdatedAt = DateTime.Now;
 			}
 			return user;
@@ -64,6 +65,29 @@ namespace Homework_8._09.Service.Services
 		public List<User> GetByTimePeriodForUpdated(DateTime beginingTime, DateTime endingTime)
 		{
 			return users.Where(u => u.UpdatedAt >= beginingTime && u.UpdatedAt <= endingTime).ToList();
+		}
+
+
+		//LINQ methods
+		public List<User> GetSortedBySex(string sex)
+		{
+			return users.Where(u => u.sex  == sex).ToList();	
+		}
+
+		public int GetCount () { return users.Count; }
+
+		public DateTime? GetMaxDateTime()
+		{
+			return users.Select(u => u.CreatedAt)
+				.DefaultIfEmpty()
+				.Max();
+		}
+
+		public DateTime? GetMinDateTime()
+		{
+			return users.Select(u => u.CreatedAt)
+				.DefaultIfEmpty()
+				.Min();
 		}
 	}
 }
