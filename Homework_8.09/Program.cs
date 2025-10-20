@@ -1,4 +1,10 @@
+using Homework_8._09.DataBase;
+using Homework_8._09.DataBase.Repository;
+using Homework_8._09.DataBase.Repository.Extensions;
+using Homework_8._09.Service.Mapping;
 using Homework_8._09.Service.Services;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Homework_8._09
 {
@@ -11,12 +17,15 @@ namespace Homework_8._09
             // Add services to the container.
 
             builder.Services.AddControllers();
-            builder.Services.AddSingleton<UserService>();
-		   // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-		   builder.Services.AddEndpointsApiExplorer();
+			builder.Services.AddDbContext<AppDbContext>(options =>
+				options.UseNpgsql(builder.Configuration.GetConnectionString("DbContext")));
+			builder.Services.AddScoped<UserService>();
+			builder.Services.AddScoped<IUserRepository, UserRepository>();
+			builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+			builder.Services.AddAutoMapper(typeof(UserMappingProfile));
 
-            var app = builder.Build();
+			var app = builder.Build();
 
 			//// Configure the HTTP request pipeline.
 			//if (app.Environment.IsDevelopment())

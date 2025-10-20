@@ -1,93 +1,83 @@
-﻿using Homework_8._09.DataBase.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AutoMapper;
+using Homework_8._09.DataBase.Models;
+using Homework_8._09.DataBase.Repository.Extensions;
+using Homework_8._09.DataBase.Scheme;
+using Homework_8._09.Models.DTO;
 
 namespace Homework_8._09.Service.Services
 {
 	public class UserService
 	{
-		private List<User> users = new();
-		private int nextid = 1;
+		private readonly IUserRepository _userRepository;
+		private readonly IMapper _mapper;
 
-
-		public User Create(User user)
+		public UserService(IUserRepository userRepository, IMapper mapper)
 		{
-			user.Id = nextid;
-			nextid++;
-			user.CreatedAt = DateTime.Now;
-			users.Add(user);
-			return user;
-
+			_userRepository = userRepository;
+			_mapper = mapper;
 		}
 
-		public User Update(User updatedUser)
+		public async Task<User> Create(CreateRequest createrequest)
 		{
-			var user = users.FirstOrDefault(u => u.Id == updatedUser.Id);
-			if (user != null)
-			{
-				user.login = updatedUser.login;
-				user.password = updatedUser.password;
-				user.sex = updatedUser.sex;
-				user.UpdatedAt = DateTime.Now;
-			}
-			return user;
+			var userEntity = _mapper.Map<User>(createrequest);
+			userEntity = await _userRepository.CreateAsync(userEntity);
+			return userEntity;
 		}
 
-		public bool Delete (int id)
+		public async Task<User> Update(Guid id, UpdateRequest updateRequest)
 		{
-			var user = users.FirstOrDefault(u => u.Id == id);
-			if (user != null)
-			{
-				users.Remove(user);
-				return true;
-			}
-			return false;
+			var existingUser = await _userRepository.GetByIdAsync(id);
+			if (existingUser == null) { return null; }
+			_mapper.Map(updateRequest, existingUser);
+			existingUser = await _userRepository.UpdateAsync(existingUser);
+			return existingUser;
 		}
 
-		public User GetByCredentials (string login, string password)
+		public async Task<bool> Delete (Guid Id)
 		{
-			return users.FirstOrDefault(u => u.login == login && u.password == password);
+			return await _userRepository.DeleteAsync(Id);
 		}
 
-		public List<User> GetAll ()
+		public async Task<User> GetByCredentials(LoginRequest loginRequest)
 		{
-			return users;
+			var userForSearch = _mapper.Map<User>(loginRequest);
+
+			var userEntity = await _userRepository.GetByCredentialsAsync(
+				userForSearch.login,
+				userForSearch.password);
+			return userEntity;
 		}
 
-		public List<User> GetByTimePeriodForCreated (DateTime beginingTime, DateTime endingTime)
+		public async Task<List<User>> GetAll ()
 		{
-			return users.Where(u => u.CreatedAt >= beginingTime && u.CreatedAt <= endingTime).ToList();
+			return await _userRepository.GetAllAsync();
 		}
 
-		public List<User> GetByTimePeriodForUpdated(DateTime beginingTime, DateTime endingTime)
+		public async Task<List<User>> GetByTimePeriodForCreated (DateTime beginingTime, DateTime endingTime)
 		{
-			return users.Where(u => u.UpdatedAt >= beginingTime && u.UpdatedAt <= endingTime).ToList();
+			return await _userRepository.GetByTimePeriodForCreatedAsync(beginingTime, endingTime);
 		}
 
-
-		//LINQ methods
-		public List<User> GetSortedBySex(string sex)
+		public async Task<List<User>> GetByTimePeriodForUpdated(DateTime beginingTime, DateTime endingTime)
 		{
-			return users.Where(u => u.sex  == sex).ToList();	
+			return await _userRepository.GetByTimePeriodForUpdatedAsync(beginingTime, endingTime);
 		}
 
-		public int GetCount () { return users.Count; }
-
-		public DateTime? GetMaxDateTime()
+		public async Task<List<User>> GetSortedBySex(int sex)
 		{
-			return users.Select(u => u.CreatedAt)
-				.DefaultIfEmpty()
-				.Max();
+			return await _userRepository.SortedBySexAsync(sex);
 		}
 
-		public DateTime? GetMinDateTime()
+		public async Task<int> GetCount () { return await _userRepository.GetCountAsync(); }
+
+		public async Task<DateTime?> GetMaxDateTime()
 		{
-			return users.Select(u => u.CreatedAt)
-				.DefaultIfEmpty()
-				.Min();
+			return await _userRepository.GetMaxCreatedAtAsync();
+		}
+
+		public async Task<DateTime?> GetMinDateTime()
+		{
+			return await _userRepository.GetMinCreatedAtAsync();
 		}
 	}
 }
