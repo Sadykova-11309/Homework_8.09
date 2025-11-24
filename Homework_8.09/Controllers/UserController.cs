@@ -1,6 +1,4 @@
-﻿using AutoMapper;
-using Homework_8._09.DataBase.Models;
-using Homework_8._09.DataBase.Scheme;
+﻿using Homework_8._09.DataBase.Models;
 using Homework_8._09.Models.DTO;
 using Homework_8._09.Service.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -15,7 +13,7 @@ namespace Homework_8._09.Controllers
 	{
 		private readonly UserService _userService;
 
-		public UserController(UserService userService, IMapper mapper)
+		public UserController(UserService userService)
 		{
 			_userService = userService;
 		}
@@ -23,6 +21,9 @@ namespace Homework_8._09.Controllers
 		[HttpPost("register")]
 		public async Task<IActionResult> Register([FromBody] CreateRequest request)
 		{
+			if (!ModelState.IsValid) 
+				return BadRequest(ModelState);
+
 			var newUser = await _userService.Create(request); 
 			return Ok(newUser); 
 		}
@@ -30,6 +31,8 @@ namespace Homework_8._09.Controllers
 		[HttpPost("login")]
 		public async Task<IActionResult> Login([FromBody] LoginRequest request)
 		{
+			if (!ModelState.IsValid)
+				return BadRequest(ModelState);
 			var user = await _userService.GetByCredentials(request);
 			if (user == null)
 			{
@@ -46,6 +49,8 @@ namespace Homework_8._09.Controllers
 		[HttpPut("update/{Id}")]
 		public async Task<IActionResult> Update(Guid Id, [FromBody] UpdateRequest request)
 		{
+			if (!ModelState.IsValid)
+				return BadRequest(ModelState);
 			var updatedUser = await _userService.Update(Id, request);
 
 			if (updatedUser == null)

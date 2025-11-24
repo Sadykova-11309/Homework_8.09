@@ -13,9 +13,9 @@ namespace Homework_8._09.DataBase.Repository
 		}
 		public async Task<User> CreateAsync(User user)
 		{
-			user.CreatedAt = DateTime.Now;
 			await _context.Users.AddAsync(user);
 			await _context.SaveChangesAsync();
+			await LoadNavigationProperties(user);
 			return user;
 		}
 
@@ -48,12 +48,12 @@ namespace Homework_8._09.DataBase.Repository
 
 		public async Task<User> GetByCredentialsAsync(string login, string password)
 		{
-			return await _context.Users.FirstOrDefaultAsync(u => u.login == login && u.password == password);
+			return await _context.Users.FirstOrDefaultAsync(u => u.Login == login && u.Password == password);
 		}
 
 		public async Task<User> GetByLoginAsync(string login)
 		{
-			return await _context.Users.FirstOrDefaultAsync(u => u.login == login);
+			return await _context.Users.FirstOrDefaultAsync(u => u.Login == login);
 		}
 
 		public async Task<List<User>> GetByTimePeriodForCreatedAsync(DateTime beginingTime, DateTime endingTime)
@@ -83,25 +83,31 @@ namespace Homework_8._09.DataBase.Repository
 
 		public async Task<List<User>> SortedBySexAsync(int sex)
 		{
-			return await _context.Users.Where(u => u.sex == sex).ToListAsync();
+			return await _context.Users.Where(u => u.Sex == sex).ToListAsync();
 		}
 
 		public async Task<User> UpdateAsync(User updatedUser)
 		{
 			var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == updatedUser.Id);
-			if(user != null)
-			{
-				user.login = updatedUser.login;
-				user.password = updatedUser.password;
-				user.sex = updatedUser.sex;
-				user.Role = updatedUser.Role;
-				user.Position = updatedUser.Position;
-				user.UpdatedAt = DateTime.Now;
+			if (user == null)
+				return null;
 
-				_context.Users.Update(user);
-				await _context.SaveChangesAsync();
-			}
+			user.Login = updatedUser.Login;
+			user.Password = updatedUser.Password;
+			user.Sex = updatedUser.Sex;
+			user.RoleId = updatedUser.RoleId;        
+			user.PositionId = updatedUser.PositionId;
+
+			await _context.SaveChangesAsync();
+			await LoadNavigationProperties(user);
 			return user;
 		}
+
+		private async Task LoadNavigationProperties(User user)
+		{
+			await _context.Entry(user).Reference(u => u.Role).LoadAsync();
+			await _context.Entry(user).Reference(u => u.Position).LoadAsync();
+		}
+
 	}
 }

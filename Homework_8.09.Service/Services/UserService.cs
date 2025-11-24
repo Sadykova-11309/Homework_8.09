@@ -1,25 +1,22 @@
-﻿using AutoMapper;
-using Homework_8._09.DataBase.Models;
+﻿using Homework_8._09.DataBase.Models;
 using Homework_8._09.DataBase.Repository.Extensions;
-using Homework_8._09.DataBase.Scheme;
 using Homework_8._09.Models.DTO;
+using Mapster;
 
 namespace Homework_8._09.Service.Services
 {
 	public class UserService
 	{
 		private readonly IUserRepository _userRepository;
-		private readonly IMapper _mapper;
 
-		public UserService(IUserRepository userRepository, IMapper mapper)
+		public UserService(IUserRepository userRepository)
 		{
 			_userRepository = userRepository;
-			_mapper = mapper;
 		}
 
 		public async Task<User> Create(CreateRequest createrequest)
 		{
-			var userEntity = _mapper.Map<User>(createrequest);
+			var userEntity = createrequest.Adapt<User>();
 			userEntity = await _userRepository.CreateAsync(userEntity);
 			return userEntity;
 		}
@@ -28,7 +25,7 @@ namespace Homework_8._09.Service.Services
 		{
 			var existingUser = await _userRepository.GetByIdAsync(id);
 			if (existingUser == null) { return null; }
-			_mapper.Map(updateRequest, existingUser);
+			updateRequest.Adapt(existingUser);
 			existingUser = await _userRepository.UpdateAsync(existingUser);
 			return existingUser;
 		}
@@ -40,11 +37,11 @@ namespace Homework_8._09.Service.Services
 
 		public async Task<User> GetByCredentials(LoginRequest loginRequest)
 		{
-			var userForSearch = _mapper.Map<User>(loginRequest);
+			var userForSearch = loginRequest.Adapt<User>();
 
 			var userEntity = await _userRepository.GetByCredentialsAsync(
-				userForSearch.login,
-				userForSearch.password);
+				userForSearch.Login,
+				userForSearch.Password);
 			return userEntity;
 		}
 

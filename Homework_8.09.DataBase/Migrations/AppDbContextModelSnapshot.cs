@@ -57,12 +57,12 @@ namespace Homework_8._09.DataBase.Migrations
                         },
                         new
                         {
-                            Id = 5,
+                            Id = 4,
                             Title = "SEO"
                         },
                         new
                         {
-                            Id = 6,
+                            Id = 5,
                             Title = "Team Lead"
                         });
                 });
@@ -106,34 +106,34 @@ namespace Homework_8._09.DataBase.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("timestamp with time zone");
 
+                    b.Property<string>("Login")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<int>("PositionId")
                         .HasColumnType("integer");
 
                     b.Property<int>("RoleId")
                         .HasColumnType("integer");
 
+                    b.Property<int>("Sex")
+                        .HasColumnType("integer");
+
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<string>("login")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("password")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<int>("sex")
-                        .HasColumnType("integer");
-
                     b.HasKey("Id");
+
+                    b.HasIndex("Login")
+                        .IsUnique();
 
                     b.HasIndex("PositionId");
 
                     b.HasIndex("RoleId");
-
-                    b.HasIndex("login")
-                        .IsUnique();
 
                     b.ToTable("Users");
                 });

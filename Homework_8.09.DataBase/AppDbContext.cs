@@ -34,8 +34,8 @@ namespace Homework_8._09.DataBase
 				new Position { Id = 1, Title = "Backend Developer" },
 				new Position { Id = 2, Title = "Frontend Developer" },
 				new Position { Id = 3, Title = "QA" },
-				new Position { Id = 5, Title = "SEO" },
-				new Position { Id = 6, Title = "Team Lead" }
+				new Position { Id = 4, Title = "SEO" },
+				new Position { Id = 5, Title = "Team Lead" }
 			);
 
 			base.OnModelCreating(modelBuilder);

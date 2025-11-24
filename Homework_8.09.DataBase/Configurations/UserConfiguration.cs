@@ -13,7 +13,7 @@ namespace Homework_8._09.DataBase.Configurations
 		public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<User> builder)
 		{
 			builder.HasKey(x => x.Id);
-			builder.HasIndex(u => u.login).IsUnique();
+			builder.HasIndex(u => u.Login).IsUnique();
 
 			builder.HasOne(u => u.Role)
 			   .WithMany()
